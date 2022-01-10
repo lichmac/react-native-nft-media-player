@@ -6,11 +6,11 @@ import { VLCPlayer } from 'react-native-vlc-media-player';
 
 export declare type MediaType = 'video' | 'audio' | 'image';
 
-declare const mediaType: {
-  readonly video: 'video';
-  readonly audio: 'audio';
-  readonly image: 'image';
-};
+// declare const mediaType: {
+//   readonly video: 'video';
+//   readonly audio: 'audio';
+//   readonly image: 'image';
+// };
 
 export interface Props {
   source: object,
@@ -88,7 +88,7 @@ export class NFTMediaPlayer extends React.Component<Props, State> {
       onEnded,
       onError,
     } = this.props || {};
-    const isImage = type === mediaType.image;
+    const isImage = type === 'image';
     return (
       <View style={style || styles.container}>
         {
