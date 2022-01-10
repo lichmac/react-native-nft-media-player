@@ -69,7 +69,9 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-fast-image": "*",
+    "react-native-vlc-media-player": "*"
   },
   "jest": {
     "preset": "react-native",
